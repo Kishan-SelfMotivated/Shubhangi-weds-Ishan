@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Tiro+Devanagari+Hindi&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-display: "Cinzel", serif;
+  --font-cursive: "Great Vibes", cursive;
+  --font-hindi: "Amita", serif;
+
+  --color-wedding-gold: #D4AF37;
+  --color-wedding-maroon: #800000;
+  --color-wedding-ivory: #FDFBF7;
+  --color-wedding-saffron: #FF9933;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-gray-100 antialiased overflow-x-hidden;
+    font-family: var(--font-serif);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-shimmer {
+    background: linear-gradient(
+      to right,
+      #D4AF37 20%,
+      #FFF8ba 40%,
+      #FFF8ba 60%,
+      #D4AF37 80%
+    );
+    background-size: 200% auto;
+    color: #D4AF37;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+    padding: 0.2em 0.5em; /* Increased safety padding for cursive tails and shimmering */
+    line-height: 1.4; /* Better spacing for large fonts */
+    display: inline-block; /* Better containment for shimmer background */
+    max-width: 100%; /* Ensure it doesn't overflow container */
+    overflow: visible; /* Prevent any clipping */
+  }
+
+  @keyframes shimmer {
+    to {
+      background-position: 200% center;
+    }
+  }
+  .text-shadow-gold {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  }
+
+  .bg-red-gradient {
+    background: linear-gradient(135deg, #4b0000 0%, #8b0000 50%, #4b0000 100%);
+  }
+
+  .bg-subtle-texture {
+    background-image: url("https://www.transparenttextures.com/patterns/pinstripe-dark.png");
+  }
+
+  .bg-premium-black {
+    background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+  }
+
+  /* Custom scrollbar for events */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 10px;
+  }
+}
+
