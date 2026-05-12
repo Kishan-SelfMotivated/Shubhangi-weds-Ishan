@@ -121,7 +121,7 @@ function WelcomeScreen({ onStart }: { onStart: () => void }) {
             className="absolute inset-0 bg-wedding-gold blur-2xl rounded-full opacity-20"
           />
           <img
-            src="https://drive.google.com/file/d/1gf_AacNEd65ci20_Z7Bsa7xnrhrU_2q9/view?usp=sharing"
+            src="src/assets/lord ganesha illustration.png"
             alt="Ganesha"
             className="w-32 h-32 relative z-10"
             referrerPolicy="no-referrer"
