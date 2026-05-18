@@ -3,7 +3,7 @@ import { Volume2, VolumeX } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 // Use a placeholder music URL (instrumental santoor/shehnai if available, or peaceful flute)
-const MUSIC_URL = 'src/assets/Ranjha – Flute Cover (Instrumental).mp3'; // Placeholder, user can update
+const MUSIC_URL = 'https://github.com/Kishan-SelfMotivated/Shubhangi-weds-Ishan/blob/main/src/assets/Ranjha%20%E2%80%93%20Flute%20Cover%20(Instrumental).mp3'; // Placeholder, user can update
 
 export const AudioPlayer = ({ isPlaying, setIsPlaying }: { isPlaying: boolean; setIsPlaying: (val: boolean) => void }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
