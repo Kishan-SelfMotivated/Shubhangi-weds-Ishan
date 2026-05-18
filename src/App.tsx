@@ -121,7 +121,7 @@ function WelcomeScreen({ onStart }: { onStart: () => void }) {
             className="absolute inset-0 bg-wedding-gold blur-2xl rounded-full opacity-20"
           />
           <img
-            src="src/assets/lord ganesha illustration.png"
+            src="https://drive.google.com/file/d/1gf_AacNEd65ci20_Z7Bsa7xnrhrU_2q9/view?usp=sharing"
             alt="Ganesha"
             className="w-32 h-32 relative z-10"
             referrerPolicy="no-referrer"
@@ -249,7 +249,8 @@ function InvitationContent() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => {
-                const message = `You are cordially invited to the wedding of Shubhangi and Ishan. 🌹\n\nPlease check the digital invitation here: ${window.location.href}`;
+                const message = `You are cordially invited to the wedding of Shubhangi and Ishan. 🌹\n\nPlease check the digital invitation here:
+                ${window.location.href}`;
                 window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
               }}
               className="flex items-center gap-3 px-8 py-4 bg-[#25D366] text-white rounded-full font-display tracking-widest text-sm shadow-xl hover:shadow-[#25D366]/20 transition-all duration-300"
