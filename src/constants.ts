@@ -21,7 +21,7 @@ export const EVENTS: InvitationEvent[] = [
     venue: 'Home, Itarsi',
     mapUrl: 'https://maps.app.goo.gl/fjQaara3MRMtXcbk8',
     theme: 'saffron',
-    imageUrl: 'https://img.freepik.com/free-vector/shish-ganesha-lord-ganpatis-symbol-wedding-card_1017-38663.jpg',
+    imageUrl: 'public/assets/maata-poojan.png',
   },
   {
     id: 'blessings',
