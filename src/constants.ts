@@ -31,7 +31,7 @@ export const EVENTS: InvitationEvent[] = [
     venue: 'Sai Krishna Resort, Hoshangabad Road, Itarsi',
     mapUrl: 'https://maps.app.goo.gl/wbhorcFPCigLyGtq7',
     theme: 'royal-gold',
-    imageUrl: 'https://img.freepik.com/free-vector/shish-ganesha-lord-ganpatis-symbol-wedding-card_1017-38663.jpg',
+    imageUrl: '/assets/indian-wedding-bride.png',
   },
   {
     id: 'haldi',
@@ -51,7 +51,7 @@ export const EVENTS: InvitationEvent[] = [
     venue: 'Hotel Imperial Grand, Near Over Bridge, Hari Fatak, Ujjain',
     mapUrl: 'https://maps.app.goo.gl/VoY4q9jZtrrDg8HJ8',
     theme: 'maroon',
-    imageUrl: 'https://img.freepik.com/free-vector/shish-ganesha-lord-ganpatis-symbol-wedding-card_1017-38663.jpg',
+    imageUrl: '/assets/wedding-ring-ceremony.png',
   },
   {
     id: 'sangeet',
@@ -61,7 +61,7 @@ export const EVENTS: InvitationEvent[] = [
     venue: 'Hotel Imperial Grand, Near Over Bridge, Hari Fatak, Ujjain',
     mapUrl: 'https://maps.app.goo.gl/VoY4q9jZtrrDg8HJ8',
     theme: 'neon',
-    imageUrl: 'https://img.freepik.com/free-vector/shish-ganesha-lord-ganpatis-symbol-wedding-card_1017-38663.jpg',
+    imageUrl: '/assets/wedding-sangeet.png',
   },
   {
     id: 'phere',
@@ -81,6 +81,6 @@ export const EVENTS: InvitationEvent[] = [
     venue: 'Hotel Imperial Grand, Near Over Bridge, Hari Fatak, Ujjain',
     mapUrl: 'https://maps.app.goo.gl/VoY4q9jZtrrDg8HJ8',
     theme: 'white',
-    imageUrl: 'https://img.freepik.com/free-vector/shish-ganesha-lord-ganpatis-symbol-wedding-card_1017-38663.jpg',
+    imageUrl: '/assets/wedding-reception.png',
   },
 ];
