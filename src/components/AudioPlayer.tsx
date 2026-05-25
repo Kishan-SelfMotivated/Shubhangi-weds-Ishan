@@ -3,7 +3,7 @@ import { Volume2, VolumeX } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 // Use a placeholder music URL (instrumental santoor/shehnai if available, or peaceful flute)
-const MUSIC_URL = 'https://drive.google.com/uc?export=download&id=1GORw1pwxT4yR6P6hBmFuTVgZKG0EsZVZ'; // Placeholder, user can update
+const MUSIC_URL = '/assets/wedding.mp3'; // Placeholder, user can update
 
 export const AudioPlayer = ({ isPlaying, setIsPlaying }: { isPlaying: boolean; setIsPlaying: (val: boolean) => void }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -21,6 +21,10 @@ export const AudioPlayer = ({ isPlaying, setIsPlaying }: { isPlaying: boolean; s
   return (
     <div className="fixed top-6 right-6 z-50">
       <audio ref={audioRef} loop preload="auto">
+        <source src="/assets/wedding.mp3" type="audio/mpeg" />
+        <source src="/assets/music.mp3" type="audio/mpeg" />
+        <source src="/assets/audio.mp3" type="audio/mpeg" />
+        <source src="/assets/song.mp3" type="audio/mpeg" />
         <source src="/wedding.mp3" type="audio/mpeg" />
         <source src="/music.mp3" type="audio/mpeg" />
         <source src="/audio.mp3" type="audio/mpeg" />

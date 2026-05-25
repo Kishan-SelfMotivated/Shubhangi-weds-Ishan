@@ -41,11 +41,11 @@ export const EVENTS: InvitationEvent[] = [
     venue: 'Home, Itarsi',
     mapUrl: 'https://maps.app.goo.gl/fjQaara3MRMtXcbk8',
     theme: 'marigold',
-    imageUrl: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'public/assets/wedding-haldi-ceremony-couple.png',
   },
   {
     id: 'faldaan',
-    title: 'Faldaan',
+    title: 'Faldaan & Ring Ceremony',
     date: '20th June 2026',
     time: '3 PM Onwards',
     venue: 'Hotel Imperial Grand, Near Over Bridge, Hari Fatak, Ujjain',
@@ -71,7 +71,7 @@ export const EVENTS: InvitationEvent[] = [
     venue: 'Hotel Imperial Grand, Near Over Bridge, Hari Fatak, Ujjain',
     mapUrl: 'https://maps.app.goo.gl/VoY4q9jZtrrDg8HJ8',
     theme: 'red',
-    imageUrl: 'https://img.freepik.com/free-vector/shish-ganesha-lord-ganpatis-symbol-wedding-card_1017-38663.jpg',
+    imageUrl: '/assets/wedding-phere.png',
   },
   {
     id: 'reception',
