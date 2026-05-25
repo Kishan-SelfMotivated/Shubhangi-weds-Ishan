@@ -41,7 +41,7 @@ export const EVENTS: InvitationEvent[] = [
     venue: 'Home, Itarsi',
     mapUrl: 'https://maps.app.goo.gl/fjQaara3MRMtXcbk8',
     theme: 'marigold',
-    imageUrl: 'public/assets/wedding-haldi-ceremony-couple.png',
+    imageUrl: '/assets/wedding-haldi-ceremony-couple.png',
   },
   {
     id: 'faldaan',
