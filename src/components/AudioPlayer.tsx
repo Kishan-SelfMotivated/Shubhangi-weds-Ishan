@@ -20,7 +20,12 @@ export const AudioPlayer = ({ isPlaying, setIsPlaying }: { isPlaying: boolean; s
 
   return (
     <div className="fixed top-6 right-6 z-50">
-      <audio ref={audioRef} src={MUSIC_URL} loop />
+      <audio ref={audioRef} loop preload="auto">
+        <source src="/wedding.mp3" type="audio/mpeg" />
+        <source src="/music.mp3" type="audio/mpeg" />
+        <source src="/audio.mp3" type="audio/mpeg" />
+        <source src={MUSIC_URL} type="audio/mpeg" />
+      </audio>
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}

@@ -11,6 +11,7 @@ import { cn } from './lib/utils';
 import { EVENTS, WEDDING_DATE, type InvitationEvent } from './constants';
 import { AudioPlayer } from './components/AudioPlayer';
 import { Countdown } from './components/Countdown';
+import WeddingGallery from './components/WeddingGallery';
 
 type ScreenState = 'WELCOME' | 'INVITATION';
 
@@ -21,6 +22,15 @@ export default function App() {
   const startJourney = () => {
     setIsAudioPlaying(true);
     setScreen('INVITATION');
+
+    // Instantly play audio synchronously within user action to bypass strict autoplay blocks
+    const audioEl = document.querySelector('audio');
+    if (audioEl) {
+      audioEl.play().catch(err => {
+        console.log('Synchronous engagement play attempt:', err);
+      });
+    }
+
     confetti({
       particleCount: 350,
       spread: 80,
@@ -112,22 +122,22 @@ function WelcomeScreen({ onStart }: { onStart: () => void }) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
-        className="mb-8"
+        className="mb-8 flex flex-col items-center justify-center"
       >
-        <div className="relative">
+        <div className="relative flex justify-center items-center">
           <motion.div
             animate={{ opacity: [0.3, 0.6, 0.3] }}
             transition={{ duration: 3, repeat: Infinity }}
-            className="absolute inset-0 bg-wedding-gold blur-2xl rounded-full opacity-20"
+            className="absolute inset-0 bg-wedding-gold blur-2xl rounded-full opacity-25 w-48 h-48 md:w-64 md:h-64 mx-auto"
           />
           <img
-            src="https://drive.google.com/file/d/1gf_AacNEd65ci20_Z7Bsa7xnrhrU_2q9/view?usp=sharing"
+            src="https://lh3.googleusercontent.com/d/1gf_AacNEd65ci20_Z7Bsa7xnrhrU_2q9"
             alt="Ganesha"
-            className="w-32 h-32 relative z-10"
+            className="w-48 h-48 md:w-64 md:h-64 object-contain relative z-10"
             referrerPolicy="no-referrer"
           />
         </div>
-        <h4 className="mt-4 font-hindi text-xl text-wedding-gold drop-shadow-sm text-shimmer tracking-widest">
+        <h4 className="mt-6 font-hindi text-xl md:text-2xl text-wedding-gold drop-shadow-sm text-shimmer tracking-widest">
           श्री गणेशाय नमः
         </h4>
       </motion.div>
@@ -231,6 +241,9 @@ function InvitationContent() {
           ))}
         </div>
       </section>
+
+      {/* Wedding Moments Gallery Section */}
+      <WeddingGallery />
 
       {/* Final Closing */}
       <section className="py-40 text-center px-6">

@@ -5,7 +5,7 @@ export interface InvitationEvent {
   time: string;
   venue: string;
   mapUrl: string;
-  theme: 'saffron' | 'royal-gold' | 'marigold' | 'maroon' | 'neon' | 'red' | 'black-gold';
+  theme: 'saffron' | 'royal-gold' | 'marigold' | 'maroon' | 'neon' | 'red' | 'black-gold' | 'white';
   imageUrl: string;
   description?: string;
 }
@@ -41,7 +41,7 @@ export const EVENTS: InvitationEvent[] = [
     venue: 'Home, Itarsi',
     mapUrl: 'https://maps.app.goo.gl/fjQaara3MRMtXcbk8',
     theme: 'marigold',
-    imageUrl: 'https://img.freepik.com/free-vector/shish-ganesha-lord-ganpatis-symbol-wedding-card_1017-38663.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=1000',
   },
   {
     id: 'faldaan',
