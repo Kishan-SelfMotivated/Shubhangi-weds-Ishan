@@ -21,7 +21,7 @@ export const EVENTS: InvitationEvent[] = [
     venue: 'Home, Itarsi',
     mapUrl: 'https://maps.app.goo.gl/fjQaara3MRMtXcbk8',
     theme: 'saffron',
-    imageUrl: 'public/assets/maata-poojan.png',
+    imageUrl: '/assets/maata-poojan.png',
   },
   {
     id: 'blessings',
