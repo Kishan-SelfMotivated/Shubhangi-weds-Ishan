@@ -317,11 +317,11 @@ function EventCard({ event, index }: EventCardProps) {
         themes[event.theme as keyof typeof themes]?.split(' ')[0] || 'border-wedding-gold'
       )}>
         <div className={cn("absolute inset-0 opacity-20 bg-current", themes[event.theme as keyof typeof themes]?.split(' ')[1] || 'text-wedding-gold')} />
-        <div className="absolute inset-0 flex items-center justify-center p-8 text-center bg-black/40 backdrop-blur-[2px]">
+        <div className="absolute inset-0 flex items-center justify-center p-2 text-center bg-black/40 backdrop-blur-[2px]">
            <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-            className="absolute inset-2 border-[1px] border-dashed opacity-30 border-wedding-gold rounded-2xl"
+            className="absolute inset-1 border-[1px] border-dashed opacity-30 border-wedding-gold rounded-2xl"
            />
            <motion.img
             initial={{ opacity: 0, scale: 0.8 }}
