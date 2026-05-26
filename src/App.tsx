@@ -242,9 +242,6 @@ function InvitationContent() {
         </div>
       </section>
 
-      {/* Wedding Moments Gallery Section */}
-      <WeddingGallery />
-
       {/* Final Closing */}
       <section className="py-40 text-center px-6">
         <motion.div
