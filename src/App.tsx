@@ -313,7 +313,7 @@ function EventCard({ event, index }: EventCardProps) {
     >
       {/* Visual Decoration */}
       <div className={cn(
-        "w-full md:w-3/5 aspect-[16/10] rounded-3xl overflow-hidden shadow-2xl relative border-4 transition-all duration-500 group-hover:scale-[1.02]",
+        "w-full md:w-3/5 aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl relative border-4 transition-all duration-500 group-hover:scale-[1.02]",
         themes[event.theme as keyof typeof themes]?.split(' ')[0] || 'border-wedding-gold'
       )}>
         <div className={cn("absolute inset-0 opacity-20 bg-current", themes[event.theme as keyof typeof themes]?.split(' ')[1] || 'text-wedding-gold')} />
