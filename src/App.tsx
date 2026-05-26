@@ -11,7 +11,6 @@ import { cn } from './lib/utils';
 import { EVENTS, WEDDING_DATE, type InvitationEvent } from './constants';
 import { AudioPlayer } from './components/AudioPlayer';
 import { Countdown } from './components/Countdown';
-import WeddingGallery from './components/WeddingGallery';
 
 type ScreenState = 'WELCOME' | 'INVITATION';
 
